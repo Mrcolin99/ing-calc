@@ -12,6 +12,7 @@
 }
 
 .weight {
+    width: 30px;
     padding: 4px;
     margin: 2px;
     color: #E9C46A;
@@ -25,6 +26,7 @@
 }
 
 .cost {
+    width: 30px;
     padding: 4px;
     margin: 2px;
     color: #E9C46A;
@@ -39,4 +41,15 @@
 
 .ing-title {
     color: #E76F51;
+}
+
+.create-new {
+    margin-top: 2px;
+    margin-left: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #264653;
+    background-color: #E76F51;
+    border: 1px solid #E76F51;
+    border-radius: 10px;
 }
