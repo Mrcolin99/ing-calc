@@ -1,0 +1,24 @@
+.input-field {
+    padding: 4px;
+    margin: 2px;
+    color: #E9C46A;
+    background-color: #2A9D8F;
+    border: 1px #2A9D8F solid;
+    border-radius: 8px;
+}
+
+.calc-main {
+    margin-left: 3px;
+}
+
+.calc-submit {
+    margin-top: 2px;
+    margin-left: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #264653;
+    background-color: #E76F51;
+    border: 1px solid #E76F51;
+    border-radius: 10px;
+}
+

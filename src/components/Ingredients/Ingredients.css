@@ -1,0 +1,42 @@
+.ingredient {
+    padding: 4px;
+    margin: 2px;
+    color: #E9C46A;
+    background-color: #2A9D8F;
+    border: 1px #2A9D8F solid;
+    border-radius: 8px;
+}
+
+.ing-label {
+    color: #E9C46A;
+}
+
+.weight {
+    padding: 4px;
+    margin: 2px;
+    color: #E9C46A;
+    background-color: #2A9D8F;
+    border: 1px #2A9D8F solid;
+    border-radius: 8px;
+}
+
+.weight-label {
+    color: #E9C46A;
+}
+
+.cost {
+    padding: 4px;
+    margin: 2px;
+    color: #E9C46A;
+    background-color: #2A9D8F;
+    border: 1px #2A9D8F solid;
+    border-radius: 8px;
+}
+
+.cost-label {
+    color: #E9C46A;
+}
+
+.ing-title {
+    color: #E76F51;
+}
