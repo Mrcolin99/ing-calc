@@ -53,3 +53,14 @@
     border: 1px solid #E76F51;
     border-radius: 10px;
 }
+
+.create-new:active{
+    margin-top: 2px;
+    margin-left: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #264653;
+    background-color: #853301;
+    border: 1px solid #E76F51;
+    border-radius: 10px;
+}
