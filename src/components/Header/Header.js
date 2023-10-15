@@ -5,7 +5,7 @@ function Header() {
     return (
         <div className='main'>
             <Link to={'/'} className='link-wrapper'>
-                <h2 className='title' >Bakery Calculator 9000</h2>
+                <h2 className='main-title' >Bakery Calculator</h2>
             </Link>
             <Link to={'/app'} className='calculator-link'>Calculator </Link>
             <Link to={'/pantry'} className='pantry-link'>Pantry </Link>

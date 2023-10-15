@@ -14,15 +14,24 @@ function Ingredients() {
 
     const handleWeightChange = (event) => {
         let weightNumber = parseInt(event.target.value)
-        weightNumber === NaN ? console.log('NaN') : setWeight(weightNumber)
-        console.log(weight)
+        if (isNaN(weightNumber)) {
+            console.log('NaN')
+        } else {
+            setWeight(weightNumber)
+        }
+        console.log(weightNumber)
     }
 
     const handleCostChange = (event) => {
         let costNumber = parseInt(event.target.value)
-        costNumber === NaN ? console.log('NaN') : setCost(costNumber)
-        console.log(cost)
+        if (isNaN(costNumber)) {
+            console.log('NaN')
+        } else {
+            setCost(costNumber)
+        }
+        console.log(costNumber)
     }
+
 
     const createNewIng = (event) => {
         event.preventDefault()
@@ -40,6 +49,13 @@ function Ingredients() {
     }
 
     const listIng = () => {
+        return list.map((ing, index) => (
+            <div key={index}>
+                <h3>{ing.name}</h3>
+                <p>Total Weight: #{ing.weight}</p>
+                <p>Total Cost: ${ing.cost}</p>
+            </div>
+        ))
     }
 
 
@@ -59,7 +75,7 @@ function Ingredients() {
                 </form>
                 <button onClick={createNewIng} className='create-new'>Add Ingredient</button>
             </div>
-            {list === [] ? listIng() : <p>no ingredients</p>}
+            {list.length === 0 ? <p>no ingredients</p> : listIng()}
         </div>
     )
 }
