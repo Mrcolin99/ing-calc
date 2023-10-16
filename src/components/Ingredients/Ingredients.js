@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect} from 'react'
 import './Ingredients.css'
 
 function Ingredients() {
@@ -31,8 +31,7 @@ function Ingredients() {
         }
         console.log(costNumber)
     }
-
-
+    
     const createNewIng = (event) => {
         event.preventDefault()
         const newIng = { name: name, weight: weight, cost: cost }
@@ -50,14 +49,27 @@ function Ingredients() {
 
     const listIng = () => {
         return list.map((ing, index) => (
-            <div key={index}>
-                <h3>{ing.name}</h3>
-                <p>Total Weight: #{ing.weight}</p>
+            <div className='list' key={index}>
+                <h3 className='list-title'>{ing.name}</h3>
+                <p>Total Weight: {ing.weight}#</p>
                 <p>Total Cost: ${ing.cost}</p>
+                <button className='list-button'>Add To current recipe</button>
+                <br/>
+                <button className='list-button'>Delete Ingredient</button>
             </div>
         ))
     }
 
+    // useEffect(() => {
+    //     const savedList = JSON.parse(localStorage.getItem('ingredientList'));
+    //     if (savedList) {
+    //         setList(savedList)
+    //     }
+    // }, [])
+
+    // useEffect(() => {
+    //     localStorage.setItem('ingredientList', JSON.stringify(list))
+    // }, [list])
 
     return (
         <div>
@@ -75,7 +87,7 @@ function Ingredients() {
                 </form>
                 <button onClick={createNewIng} className='create-new'>Add Ingredient</button>
             </div>
-            {list.length === 0 ? <p>no ingredients</p> : listIng()}
+            {list.length === 0 ? <p className='no-ing'>No Ingredients Yet!</p> : listIng()}
         </div>
     )
 }

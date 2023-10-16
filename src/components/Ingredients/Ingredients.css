@@ -64,3 +64,26 @@
     border: 1px solid #E76F51;
     border-radius: 10px;
 }
+
+.list{
+    color: #E9C46A;
+}
+
+.list-title{
+    color: #E76F51;
+}
+
+.list-button{
+    margin-top: 2px;
+    margin-left: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #264653;
+    background-color: #E76F51;
+    border: 1px solid #E76F51;
+    border-radius: 10px;
+}
+
+.no-ing{ 
+    color: #E76F51;
+}
