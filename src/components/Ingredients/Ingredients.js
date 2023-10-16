@@ -60,16 +60,16 @@ function Ingredients() {
         ))
     }
 
-    // useEffect(() => {
-    //     const savedList = JSON.parse(localStorage.getItem('ingredientList'));
-    //     if (savedList) {
-    //         setList(savedList)
-    //     }
-    // }, [])
+    useEffect(() => {
+        const savedList = JSON.parse(localStorage.getItem('ingredientList'));
+        if (savedList) {
+            setList(savedList)
+        }
+    }, [])
 
-    // useEffect(() => {
-    //     localStorage.setItem('ingredientList', JSON.stringify(list))
-    // }, [list])
+    useEffect(() => {
+        localStorage.setItem('ingredientList', JSON.stringify(list))
+    }, [list])
 
     return (
         <div>

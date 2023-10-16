@@ -92,6 +92,11 @@ function App() {
         <input type='text' name='ingredient6' className='input-field' />
         <br />
       </form>
+    <p className='yield'>Yield:</p>
+      <form>
+        <input type='text' name='yield' className='input-field'></input>
+        <label for='yield'></label>
+      </form>
       <button className='calc-submit' onClick={submit}>
         <h3>Calculate</h3>
       </button>
