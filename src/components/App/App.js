@@ -5,6 +5,7 @@ function App() {
   const [ing1, setIng1] = useState(0)
   const [ing2, setIng2] = useState(0)
   const [ing3, setIng3] = useState(0)
+  //add up to 15 ing to be safe
 
 
   const ing1Change = (event) => {
